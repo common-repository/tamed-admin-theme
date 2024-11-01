@@ -1,0 +1,39 @@
+#wp-content-wrap{
+  #wp-content-editor-tools{
+
+
+    // Add media button
+    .button{
+
+    }
+
+    // Tabs
+    .wp-editor-tabs{
+
+
+      button,
+      a{
+        height: 20px;
+        padding: 5px 15px !important;
+
+        border: none !important;
+        border-radius: 3px !important;
+
+        &:active,
+        &:focus{
+          color: $white !important;
+        }
+      }
+    }
+  }
+}
+
+// Post info
+#post-status-info{
+  box-shadow: none !important;
+}
+
+// Z-index
+.wp-editor-expand div.mce-toolbar-grp{
+  z-index: $zIndex-content;
+}

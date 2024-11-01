@@ -1,0 +1,45 @@
+.wrap-settings{
+  .tmd-block{
+    width: 100%;
+    padding: 50px 0;
+    display: inline-block;
+
+    border-bottom: thin solid $grey;
+  }
+
+  label{
+    width: 20%;
+    display: block;
+    float: left;
+    margin-right: 5%;
+    padding: 25px;
+
+    text-align: center;
+    border-radius: 5px;
+    background-color: transparent;
+
+    &:last-child{
+      margin-right: 0;
+    }
+
+    img{
+      margin-bottom: 25px;
+    }
+  }
+
+  input[type="radio"]{
+    display: none;
+  }
+
+  input[type="radio"]:checked + label{
+    background-color: $grey;
+  }
+
+  #tmd-logo{
+    img{
+      width: auto;
+      height: 150px;
+      margin-bottom: 0;
+    }
+  }
+}

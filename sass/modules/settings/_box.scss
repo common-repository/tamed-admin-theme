@@ -1,0 +1,46 @@
+.tamed-wrap{
+  > h2{
+    margin-bottom: 30px;
+  }
+  
+  .tamed-box{
+    width: 100%;
+    margin-bottom: 30px;
+    display: inline-block;
+
+    border-radius: 5px;
+
+    &:first-child{
+      margin-top: 30px;
+    }
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    .tamed-box-header,
+    .tamed-box-body{
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+
+    .tamed-box-header{
+      padding: 10px 30px;
+
+      *{
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    .tamed-box-body{
+      padding: 30px;
+    }
+  }
+
+  p.submit{
+    margin: 0;
+    padding: 0;
+  }
+}

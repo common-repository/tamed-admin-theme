@@ -1,0 +1,71 @@
+#wpbody #wpbody-content .wrap {
+  background-color: #F2F2F2; }
+  #wpbody #wpbody-content .wrap .nav-tab-wrapper {
+    background-color: white; }
+    #wpbody #wpbody-content .wrap .nav-tab-wrapper .nav-tab.nav-tab-active, #wpbody #wpbody-content .wrap .nav-tab-wrapper .nav-tab:hover {
+      border-bottom: 3px solid #4BA0D9; }
+
+#wpwrap {
+  background: #F2F2F2; }
+
+#wpadminbar {
+  background: #242B37; }
+
+#adminmenuback,
+#adminmenuwrap,
+#adminmenu {
+  background: #364052; }
+
+#adminmenuwrap ul#adminmenu li a .wp-menu-image:before {
+  color: white; }
+#adminmenuwrap ul#adminmenu li a .wp-menu-name {
+  color: white; }
+#adminmenuwrap ul#adminmenu li.current a, #adminmenuwrap ul#adminmenu li.wp-has-current-submenu a {
+  background: #4BA0D9; }
+  #adminmenuwrap ul#adminmenu li.current a .wp-menu-name, #adminmenuwrap ul#adminmenu li.wp-has-current-submenu a .wp-menu-name {
+    color: white; }
+#adminmenuwrap ul#adminmenu li.wp-has-submenu ul.wp-submenu {
+  background: #242B37; }
+  #adminmenuwrap ul#adminmenu li.wp-has-submenu ul.wp-submenu li a {
+    color: #e0e0e0; }
+    #adminmenuwrap ul#adminmenu li.wp-has-submenu ul.wp-submenu li a.current {
+      color: white; }
+    #adminmenuwrap ul#adminmenu li.wp-has-submenu ul.wp-submenu li a:hover {
+      color: white; }
+#adminmenuwrap ul#adminmenu li:hover a, #adminmenuwrap ul#adminmenu li:focus a {
+  color: white;
+  background: #4BA0D9; }
+#adminmenuwrap ul#adminmenu li.wp-menu-separator {
+  background: #242B37; }
+
+button.button-primary, button.blue,
+.button.button-primary,
+.button.blue {
+  background-color: #4BA0D9 !important; }
+  button.button-primary:hover, button.blue:hover,
+  .button.button-primary:hover,
+  .button.blue:hover {
+    background-color: #3F89B2 !important; }
+
+.updated,
+.error,
+.settings-error {
+  background-color: white !important; }
+
+.wrap-settings input[type="radio"]:checked + label {
+  background-color: #e0e0e0; }
+
+.wp-filter .view-switch a.current:before {
+  color: #4BD9AC !important; }
+
+#wp-content-wrap #wp-content-editor-tools.tmce-active .wp-editor-tabs .switch-tmce {
+  color: white !important;
+  background-color: #4BA0D9 !important; }
+#wp-content-wrap #wp-content-editor-tools.html-active .wp-editor-tabs .switch-html {
+  color: white !important;
+  background-color: #4BA0D9 !important; }
+
+.tamed-wrap .tamed-box {
+  background-color: white; }
+  .tamed-wrap .tamed-box .tamed-box-header {
+    border-bottom: thin solid #F2F2F2; }

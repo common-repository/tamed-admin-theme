@@ -1,0 +1,210 @@
+@import "base/_colors";
+
+$grey-light: #E9EBEE;
+$grey-medium: #D0D4D8;
+$grey-dark: #575757;
+
+#wpbody{
+  #wpbody-content{
+    .wrap{
+      background-color: $white;
+
+      .nav-tab-wrapper{
+        background-color: $grey-light;
+
+        .nav-tab{
+          &.nav-tab-active,
+          &:hover{
+            border-bottom: 3px solid $green;
+          }
+        }
+      }
+    }
+  }
+}
+
+#wpwrap{
+  background: $white;
+}
+
+// MENU
+#wpadminbar{
+  background: $grey-dark;
+}
+
+#adminmenuback,
+#adminmenuwrap,
+#adminmenu{
+  background: $grey-light;
+}
+
+#adminmenuwrap{
+  ul#adminmenu{
+    li{
+      a{
+        .wp-menu-image{
+          &:before{
+            color: $grey-dark;
+          }
+        }
+
+        .wp-menu-name{
+          color: $grey-dark;
+        }
+      }
+
+      //Currently selected menu item
+      &.current,
+      &.wp-has-current-submenu{
+        background-color: $grey-medium;
+        border-left: 5px solid $green;
+
+        a{
+          background-color: $grey-medium;
+        }
+
+        li{
+          border: none;
+        }
+      }
+
+      &.wp-not-current-submenu{
+        ul.wp-submenu{
+          left: 180px;
+
+          box-shadow: none !important;
+        }
+      }
+
+      //Menu item with submenu
+      &.wp-has-submenu{
+        ul.wp-submenu{
+          width: 175px;
+          background: $grey-medium;
+
+          li{
+            a{
+              color: $grey-dark;
+
+              &.current{
+                color: $white;
+              }
+
+              &:hover{
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+
+      //Different states
+      &:hover,
+      &:focus{
+        background-color: transparent;
+        border-left: 5px solid $green;
+      }
+
+      &.wp-has-current-submenu:hover,
+      &.wp-has-current-submenu:focus{
+        background-color: $grey-medium;
+      }
+
+      //Admin menu group seperator
+      &.wp-menu-separator{
+        background: $grey-medium;
+      }
+    }
+
+    li.wp-has-current-submenu.menu-top:hover,
+    li.wp-has-current-submenu.opensub>a.menu-top,
+    li.wp-has-current-submenu>a.menu-top:focus{
+      background-color: $grey-medium !important;
+    }
+  }
+}
+
+// BUTTONS
+button,
+.button{
+  &.button-primary,
+  &.blue{
+    background-color: $green !important;
+
+    &:hover{
+      background-color: $green-medium !important;
+    }
+  }
+}
+
+// MESSAGES
+.updated,
+.error,
+.settings-error{
+  background-color: $grey-light !important;
+}
+
+// SETTINGS
+.wrap-settings{
+  input[type="radio"]:checked + label{
+    background-color: #f2f2f2;
+  }
+}
+
+// Media view switches
+.wp-filter{
+  .view-switch a.current:before{
+    color: $green !important;
+  }
+}
+
+// WYSIWYG
+#wp-content-wrap{
+  #wp-content-editor-tools{
+    background-color: $white;
+  }
+
+  // Active view tab
+  &.tmce-active{
+    .wp-editor-tabs{
+      .switch-tmce{
+        color: $white !important;
+        background-color: $green !important;
+      }
+    }
+  }
+
+  .wp-editor-tabs{
+    .switch-tmce:hover{
+      color: $white !important;
+      background-color: $green !important;
+    }
+  }
+
+  &.html-active{
+    .wp-editor-tabs{
+      .switch-html{
+        color: $white !important;
+        background-color: $green !important;
+      }
+    }
+  }
+
+  .wp-editor-tabs{
+    .switch-html:hover{
+      color: $white !important;
+      background-color: $green !important;
+    }
+  }
+}
+
+// Tamed content box
+.tamed-wrap{
+  .tamed-box{
+    border: thin solid $grey-medium;
+
+    .tamed-box-header{
+      border-bottom: thin solid $grey-medium;
+    }
+  }
+}

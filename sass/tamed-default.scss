@@ -1,0 +1,167 @@
+@import "base/_colors";
+
+#wpbody{
+  #wpbody-content{
+    .wrap{
+      background-color: $grey-light;
+
+      .nav-tab-wrapper{
+        background-color: $white;
+
+        .nav-tab{
+          &.nav-tab-active,
+          &:hover{
+            border-bottom: 3px solid $blue;
+          }
+        }
+      }
+    }
+  }
+}
+
+#wpwrap{
+  background: $grey-light;
+}
+
+// MENU
+#wpadminbar{
+  background: $blue-dark;
+}
+
+#adminmenuback,
+#adminmenuwrap,
+#adminmenu{
+  background: $grey-dark;
+}
+
+#adminmenuwrap{
+  ul#adminmenu{
+    li{
+      a{
+        .wp-menu-image{
+          &:before{
+            color: $white;
+          }
+        }
+
+        .wp-menu-name{
+          color: $white;
+        }
+      }
+
+      //Currently selected menu item
+      &.current,
+      &.wp-has-current-submenu{
+        a{
+          background: $blue;
+
+          .wp-menu-name{
+            color: $white;
+          }
+        }
+      }
+
+      //Menu item with submenu
+      &.wp-has-submenu{
+        ul.wp-submenu{
+          background: $blue-dark;
+
+          li{
+            a{
+              color: $grey;
+
+              &.current{
+                color: $white;
+              }
+
+              &:hover{
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+
+      //Different states
+      &:hover,
+      &:focus{
+        a{
+          color: $white;
+          background: $blue;
+        }
+      }
+
+      //Admin menu group seperator
+      &.wp-menu-separator{
+        background: $blue-dark;
+      }
+    }
+  }
+}
+
+// BUTTONS
+button,
+.button{
+  &.button-primary,
+  &.blue{
+    background-color: $blue !important;
+
+    &:hover{
+      background-color: $blue-medium !important;
+    }
+  }
+}
+
+// MESSAGES
+.updated,
+.error,
+.settings-error{
+  background-color: $white !important;
+}
+
+// SETTINGS
+.wrap-settings{
+  input[type="radio"]:checked + label{
+    background-color: $grey;
+  }
+}
+
+// Media view switches
+.wp-filter{
+  .view-switch a.current:before{
+    color: $green !important;
+  }
+}
+
+// WYSIWYG
+#wp-content-wrap #wp-content-editor-tools{
+  // Active view tab
+  &.tmce-active{
+    .wp-editor-tabs{
+      .switch-tmce{
+        color: $white !important;
+        background-color: $blue !important;
+      }
+    }
+  }
+
+  &.html-active{
+    .wp-editor-tabs{
+      .switch-html{
+        color: $white !important;
+        background-color: $blue !important;
+      }
+    }
+  }
+}
+
+// Tamed content box
+.tamed-wrap{
+  .tamed-box{
+    background-color: $white;
+
+    .tamed-box-header{
+      border-bottom: thin solid $grey-light;
+    }
+  }
+}

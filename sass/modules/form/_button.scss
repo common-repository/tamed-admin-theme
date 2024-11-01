@@ -1,0 +1,71 @@
+.button{
+  height: 35px !important;
+  padding: 0 40px !important;
+
+  line-height: 35px !important;
+  border: none !important;
+  box-shadow: none !important;
+  background-color: #e0e0e0 !important;
+  border-radius: 3px !important;
+
+  &:hover{
+    color: $white !important;
+    background-color: #c0c0c0 !important;
+  }
+}
+
+// Buttons without 'button' class
+.acf-button,
+.add-new-h2{
+  @extend .button;
+}
+
+// 'Add new' button's extra styling
+.add-new-h2{
+  padding: (35px - 26px) 40px !important;
+  font-weight: normal !important;
+}
+
+// Buttons which need to stay small(er)
+.actions .button,
+.search-box .button,
+.wp-filter .button,
+.button-small,
+.tagadd{
+  height: auto !important;
+  padding: 0 10px !important;
+
+  line-height: 26px !important;
+  border-radius: 3px !important;
+}
+
+// Woocommerce support
+.button.wc-reload{
+  height: 28px !important;
+  padding: 0 !important;
+
+  &:after{
+    line-height: 28px !important;
+  }
+}
+
+.postbox .button.pip-link{
+  width: 100% !important;
+  margin: 5px 0 !important;
+
+  text-align: center !important;
+}
+
+table.wp-list-table .order_actions .button{
+  width: 25px !important;
+  height: 25px !important;
+  padding: 0 !important;
+
+  line-height: 25px !important;
+
+  img{
+    width: auto !important;
+    height: 12px !important;
+    margin: 6px auto !important;
+  }
+}
